@@ -62,17 +62,49 @@ h1 span{
   margin: 1em;
   color: #000;
   padding: 0.25em;
-
   background: #ffee6b;
+  animation: bar-animation 5s 0.5s;
+}
+/* FFEE6B スキルレベルによって色を変える。ベースはこの色で自信のあるスキルが色濃く */
+.skills__bar-a{
+  max-width: 80%;
+  background: rgba(255,238,107,1);
+}
+.skills__bar-b{
+  max-width: 80%;
+  background: rgba(255,238,107,1);
+}
+.skills__bar-c{
+  max-width: 60%;
+  background: rgba(255,238,107,0.8);
+}
+.skills__bar-d{
+  max-width: 70%;
+  background: rgba(255,238,107,0.8);
+}
+.skills__bar-e{
+  max-width: 80%;
+  background: rgba(255,238,107,1);
+}
+.skills__bar-f{
+  max-width: 80%;
+  background: rgba(255,238,107,1);
+}
+.skills__bar-g{
+  max-width: 40%;
+  background: rgba(255,238,107,0.6);
+}
+.skills__bar-h{
+  max-width: 30%;
+  background: rgba(255,238,107,0.4);
 }
 .section__title{
   font-size: 25px;
   text-align: center;
   padding: 20px;
 }
-.skills__bar-a{
-  max-width: 70%;
-  animation: bar-animation 5s 2s;
+.works{
+  padding-bottom: 50px;
 }
 .works__list{
   display: flex;
