@@ -2,88 +2,338 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ - 大平裕章</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7b73e8776a.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main class="top-header">
-      <div class="fold-top-left"></div>
-      <div class="fold-bottom-right"></div>
-      <div class="fold-text">hi629's portfolio</div>
-      <h1>CREATE WEB SITES AND APPS<br>
-        <span>WEB ENGINEER</span>
-      </h1>
-    </main>
-    <section class="profile coverall-container">
-      <h2 class="section__title">PROFILE</h2>
-      <p class="profile__text">
-        Webエンジニアです。サーバーサイドからフロントエンドまで幅広く対応しています。
-      </p>
-      <p class="profile__text">
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-      </p>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">ポートフォリオ</div>
+        <div class="navbar__links">
+          <a href="#about" class="navbar__link">About</a>
+          <a href="#skills" class="navbar__link">スキル</a>
+          <a href="#process" class="navbar__link">工程別スキル</a>
+        </div>
+      </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__name">大平裕章</span>
+            <span class="hero__role">WEB ENGINEER</span>
+          </h1>
+          <p class="hero__subtitle">サーバーサイド・フロントエンド両方の開発が可能なフルスタックエンジニア</p>
+        </div>
+      </div>
     </section>
-    <section class="skills coverall-container">
-      <h2 class="section__title">SKILLS</h2>
-      <article class="skills__list">
-        <h3 class="skills__list-title">FRONTEND</h2>
-        <div class="skills__bar skills__bar-a">
-          HTML
-        </div>
-        <div class="skills__bar skills__bar-b">
-          CSS
-        </div>
-        <div class="skills__bar skills__bar-c">
-          Javascript
-        </div>
-        <div class="skills__bar skills__bar-d">
-          JQuery
-        </div>
-      </article>
-      <article class="skills__list">
-        <h3 class="skills__list-title">BACKEND</h2>
-        <div class="skills__bar skills__bar-e">
-          Ruby
-        </div>
-        <div class="skills__bar skills__bar-f">
-          Ruby on Rails
-        </div>
-      </article>
-      <article class="skills__list">
-        <h3 class="skills__list-title">OTHER</h2>
-        <div class="skills__bar skills__bar-g">
-          AWS
-        </div>
-        <div class="skills__bar skills__bar-h">
-          docker
-        </div>
-      </article>
-    </section>
-    <section class="works coverall-container">
-      <h2 class="section__title">WORKS</h2>
-      <article class="works__list">
-        <div class="works__image-wrap">
-          <img src="./port.png" alt="" class="works__image">
-          <div class="works__image-mask">
-            <p class="works__image-title">This website<br><span>HTML/CSS</span></p>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="section__title-text">About</span>
+        </h2>
+        <div class="about__content">
+          <div class="about__main">
+            <div class="about__text-block">
+              <div class="about__icon-wrapper">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3 class="about__heading">経験</h3>
+              <p class="about__description">
+                受託企業、自社開発企業での自社サービス開発のどちらも経験してまいりました。
+              </p>
+            </div>
+            
+            <div class="about__text-block">
+              <div class="about__icon-wrapper">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="about__heading">開発スタック</h3>
+              <p class="about__description">
+                開発に関してはフロントエンドはReact, TypeScript, Next.js、サーバーサイドはNode.js, Ruby, PHPを用いて開発を行ってきたのでサーバーサイド、フロントエンド両方開発可能です。
+              </p>
+              <div class="tech-stack">
+                <div class="tech-stack__group">
+                  <span class="tech-stack__label">Frontend</span>
+                  <div class="tech-stack__tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Next.js</span>
+                  </div>
+                </div>
+                <div class="tech-stack__group">
+                  <span class="tech-stack__label">Backend</span>
+                  <div class="tech-stack__tags">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Ruby</span>
+                    <span class="tech-tag">PHP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__side">
+            <div class="about__card about__card--strength">
+              <div class="about__card-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="about__card-title">強み</h3>
+              <p class="about__card-text">
+                経験したことのない技術であっても積極的にキャッチアップしていき、業務を遂行していくことが挙げられます。
+              </p>
+            </div>
+
+            <div class="about__card about__card--future">
+              <div class="about__card-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3 class="about__card-title">今後の展望</h3>
+              <p class="about__card-text">
+                今後も、現場で必要とされる技術をより豊富に身に付け、より幅広い業務を担えるようになりたいと考えております。
+              </p>
+            </div>
           </div>
         </div>
-      </article>
+      </div>
     </section>
-    <footer>
-      <p class="footer__social coverall-container">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-twitter"></i>
-      </p>
-      <p class="footer__copyright">© 2019 · hi629 · ALL RIGHTS RESERVED</p>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="section__title-text">スキル</span>
+        </h2>
+
+        <!-- Programming Languages -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">
+            <i class="fas fa-code"></i>
+            プログラミング言語
+          </h3>
+          <div class="skills__grid">
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">TypeScript</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">JavaScript</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">Node.js</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">Ruby</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">PHP</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">SQL</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--b">
+              <span class="skill-tag__name">Shell</span>
+              <span class="skill-tag__level">B</span>
+            </div>
+            <div class="skill-tag skill-tag--b">
+              <span class="skill-tag__name">PL/SQL</span>
+              <span class="skill-tag__level">B</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">
+            <i class="fas fa-layer-group"></i>
+            フレームワーク・ライブラリ
+          </h3>
+          <div class="skills__grid">
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">React</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">Next.js</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">Ruby on Rails</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--b">
+              <span class="skill-tag__name">FuelPHP</span>
+              <span class="skill-tag__level">B</span>
+            </div>
+            <div class="skill-tag skill-tag--b">
+              <span class="skill-tag__name">Zend Framework</span>
+              <span class="skill-tag__level">B</span>
+            </div>
+            <div class="skill-tag skill-tag--b">
+              <span class="skill-tag__name">jQuery</span>
+              <span class="skill-tag__level">B</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud Services -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">
+            <i class="fas fa-cloud"></i>
+            クラウドサービス
+          </h3>
+          <div class="skills__grid">
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">AWS</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+            <div class="skill-tag skill-tag--b">
+              <span class="skill-tag__name">Google Cloud Platform</span>
+              <span class="skill-tag__level">B</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Others -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">
+            <i class="fas fa-tools"></i>
+            その他
+          </h3>
+          <div class="skills__grid">
+            <div class="skill-tag skill-tag--a">
+              <span class="skill-tag__name">プロジェクト管理系</span>
+              <span class="skill-tag__level">A</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Skills Section -->
+    <section id="process" class="section process">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="section__title-text">工程別スキル</span>
+        </h2>
+        <div class="process__grid">
+          <div class="process-card process-card--a">
+            <div class="process-card__icon">
+              <i class="fas fa-drafting-compass"></i>
+            </div>
+            <h3 class="process-card__title">基本設計</h3>
+            <div class="process-card__level">A</div>
+          </div>
+          <div class="process-card process-card--a">
+            <div class="process-card__icon">
+              <i class="fas fa-file-code"></i>
+            </div>
+            <h3 class="process-card__title">詳細設計</h3>
+            <div class="process-card__level">A</div>
+          </div>
+          <div class="process-card process-card--a">
+            <div class="process-card__icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 class="process-card__title">製造・構築・単体テスト</h3>
+            <div class="process-card__level">A</div>
+          </div>
+          <div class="process-card process-card--b">
+            <div class="process-card__icon">
+              <i class="fas fa-vial"></i>
+            </div>
+            <h3 class="process-card__title">詳細テスト</h3>
+            <div class="process-card__level">B</div>
+          </div>
+          <div class="process-card process-card--b">
+            <div class="process-card__icon">
+              <i class="fas fa-check-double"></i>
+            </div>
+            <h3 class="process-card__title">総合テスト</h3>
+            <div class="process-card__level">B</div>
+          </div>
+          <div class="process-card process-card--a">
+            <div class="process-card__icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="process-card__title">保守・運用</h3>
+            <div class="process-card__level">A</div>
+          </div>
+          <div class="process-card process-card--b">
+            <div class="process-card__icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3 class="process-card__title">業務装着</h3>
+            <div class="process-card__level">B</div>
+          </div>
+          <div class="process-card process-card--b">
+            <div class="process-card__icon">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <h3 class="process-card__title">マネジメント</h3>
+            <div class="process-card__level">B</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <p class="footer__copyright">© 2025 · 大平裕章 · ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
     </footer>
+
+    <script>
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to navbar
+      window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('navbar--scrolled');
+        } else {
+          navbar.classList.remove('navbar--scrolled');
+        }
+      });
+    </script>
   </body>
 </html>
