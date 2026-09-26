@@ -6,3 +6,9 @@
 
 /* Skill-sheet ratings and experience labels. */
 .skill>span:first-child{min-width:0;overflow-wrap:anywhere}.experience-label{font-size:10px;white-space:nowrap;color:#526148;background:#e8edde;padding:3px 7px;border-radius:4px}.level-c{color:#58491c;background:#ece0b8}.skill-legend{margin-top:20px;border-top:1px solid #bec9b7;padding-top:15px;color:#4e5d48;font-size:12px}.skill-legend summary{cursor:pointer;width:fit-content}.skill-legend summary:focus-visible{outline:2px solid #3f5c25;outline-offset:4px}.skill-legend p{line-height:2}.skill-caption{flex-wrap:wrap}@media(max-width:600px){.skills-grid{grid-template-columns:1fr}.skill{font-size:14px;min-height:60px}.experience-label{font-size:11px}}
+
+/* Bilingual navigation and English typography. */
+.language-switch{display:flex;gap:3px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:3px;margin-left:auto;margin-right:26px}.language-switch a{font-size:11px;padding:5px 9px;border-radius:20px;line-height:1.5}.language-switch a[aria-current]{background:var(--lime);color:var(--dark)}.language-switch a:hover{box-shadow:inset 0 0 0 1px var(--lime)}
+html[lang=en] h1{font-size:clamp(44px,5.1vw,70px);line-height:1.12;letter-spacing:-.045em}html[lang=en] .experience-label{font-size:9px}html[lang=en] .skill-caption{font-size:10px}html[lang=en] .hero-bottom strong{letter-spacing:0}
+@media(min-width:851px){.header .language-switch{order:3;margin-left:26px;margin-right:0}.header nav{margin-left:auto}}
+@media(max-width:850px){.language-switch{margin-right:12px}.brand-label{display:none}html[lang=en] h1{font-size:clamp(44px,10vw,62px)}html[lang=en] .hero-bottom{align-items:flex-start}html[lang=en] .hero-bottom>a{max-width:100px}html[lang=en] .hero-bottom div>span{letter-spacing:0}}
